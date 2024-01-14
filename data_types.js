@@ -56,3 +56,10 @@ function sum(a, b) {
 
 //? We can check type of any variable -> "typeof"
 // console.log(typeof Person);
+
+//! Advance Data Types
+
+//* Symbol
+//* BigInt
+
+// Pending for now
