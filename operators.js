@@ -117,8 +117,8 @@ let [a, b, c] = numbers;
 
 // Object Destructuring
 let person = { userName: "John", age: 30, isStudent: false };
-let { userName, he } = person;
-console.log(userName, he);
+let { userName, age } = person;
+console.log(userName, age);
 
 //?We cannot use spread operator in Object , it is giving error.
 //? Also we have to ensure that variable should match the exact name as key to get value other return undefined.
