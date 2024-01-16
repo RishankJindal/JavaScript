@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures</title>
+  </head>
+  <style>
+    #outer {
+      width: 1010px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #div1,
+    #div2 {
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <div id="outer">
+      <div id="div1">
+        <button id="btn1">Orange</button>
+        <button id="btn2">Pink</button>
+        <h2>Right way using closures...</h2>
+      </div>
+      <div id="div2">
+        <button id="btn3">Green</button>
+        <button id="btn4">Yellow</button>
+        <h2>To resolve this kind of reference error! Wrong way...</h2>
+      </div>
+    </div>
+    <p style="color: red">Press button to see difference in both boxes!</p>
+    <script src="./closures.js"></script>
+  </body>
+</html>
