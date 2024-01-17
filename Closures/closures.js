@@ -19,7 +19,7 @@ functions,etc. ka access hota h . */
 
 //? Hum closures waha use krte h jaha hame direct function ko execute na krna ho just uska reference dena ho , lein use execute bhi krna ho.
 
-//* Example
+//* Example 1
 function colorHandler(color) {
   div1 = document.getElementById("div1");
   return function () {
@@ -36,3 +36,18 @@ document.getElementById("btn1").onclick = colorHandler("orange");
 document.getElementById("btn2").onclick = colorHandler("pink");
 document.getElementById("btn3").onclick = colorHandler2("green");
 document.getElementById("btn4").onclick = colorHandler2("yellow");
+
+//* Example 2
+
+//? Better Understanding , actually it is example of Higher order function but due to very less difference and good understanding I write it here.
+/*
+function multiplier(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // Output: 10
+
+*/
