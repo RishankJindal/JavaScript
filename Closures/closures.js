@@ -17,8 +17,7 @@ functions,etc. ka access hota h . */
 
 //* CLosures
 
-//? Hum closures waha use krte h jaha hame direct function ko execute na krna ho just uska reference dena ho , lein use execute bhi krna ho.
-
+//? Hum closures waha use krte h jaha hame direct function ko execute na krna ho just uska reference dena ho.
 //* Example 1
 function colorHandler(color) {
   div1 = document.getElementById("div1");
