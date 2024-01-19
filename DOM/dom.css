@@ -1,0 +1,92 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+#wrapper {
+  width: 80vw;
+  margin: auto;
+  min-height: 40vh;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#listDiv {
+  width: 50%;
+  border: 2px solid red;
+  min-height: 40vh;
+  color: black;
+  padding: 10px;
+}
+
+#btnDiv {
+  border: 2px solid green;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+
+#btn {
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+#contentInput {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+#colorFrameWrapper {
+  width: 80vw;
+  border: 2px solid black;
+  margin: 10px auto;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#colorFrame {
+  width: 40vw;
+  height: 25vh;
+  border: 2px solid black;
+}
+
+#colorButtons button {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.green {
+  background-color: green;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
