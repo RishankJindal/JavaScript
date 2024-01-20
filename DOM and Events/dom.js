@@ -37,18 +37,23 @@ function checkEnter(event) {
 // const colorButtons = document.getElementById("colorButtons");
 const colorButtons2 = document.querySelector("#colorButtons");
 const colorFrame = document.querySelector("#colorFrame");
-
+let prevClassList = "";
 // Add a single event listener to the container
 colorButtons2.addEventListener("click", function (event) {
+  //! Approach 01 - Play with Event Object
   // Check if the clicked element is a button
+  // if (event.target.tagName === "BUTTON") {
+  //   const buttonContent = event.target.textContent;
+  //   colorFrame.style.backgroundColor = `${buttonContent}`;
+  // }
+
+  //! Approach 02 - Play with class List
   if (event.target.tagName === "BUTTON") {
-    // GET the specific button's ID <-
-    // const buttonId = event.target.id;
-
-    //GET the button content <-
-    const buttonContent = event.target.textContent;
-
-    colorFrame.style.backgroundColor = `${buttonContent}`;
+    const buttonContent = event.target.textContent.toLowerCase();
+    //? Interesting ...
+    // colorFrame.classList.toggle(buttonContent);
+    colorFrame.classList = "";
+    colorFrame.classList.add(buttonContent);
   }
 });
 
